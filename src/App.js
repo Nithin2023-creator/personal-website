@@ -41,6 +41,7 @@ const theme = createTheme({
 
 // API configuration
 axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+axios.defaults.withCredentials = true;
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
